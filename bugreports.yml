@@ -13,7 +13,7 @@
     Ошибка не выводится, результатов поиска нет
 
 - summary: |
-    Во вкладке "Language"/"Язык" не отображается изображение флага связаного с языком
+    Во вкладке "Language"/"Язык" не отображается изображение флага связаного с языком (language.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Win10 22H2 19045.3086
@@ -25,7 +25,7 @@
     Отображается только флаг для русского языка
 
 - summary: |
-    При оформлении заказа, данные о заказе не отправляются на сервер
+    При оформлении заказа, данные о заказе не отправляются на сервер (failed checkout.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Win10 22H2 19045.3086
@@ -39,7 +39,7 @@
     В DevTools во вкладке Network появляется ошибка со статусом 500
 
 - summary: |
-    Отсутствуют "Cookies" для оптимизации работы сайта
+    Отсутствуют "Cookies" для оптимизации работы сайта (cookies.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Win10 22H2 19045.3086
@@ -51,7 +51,7 @@
     Сайт не использует "Cookies"
 
 - summary: |
-    Не загружается random.css
+    Не загружается random.css (failed random.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Firefox 112.0.1 (64-битная)
@@ -64,7 +64,7 @@
     Сайт не загружает random.css с ошибкой net::ERR_NAME_NOT_RESOLVED
 
 - summary: |
-    Не загружается author.js
+    Не загружается author.js (failed author.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Firefox 112.0.1 (64-битная)
@@ -77,20 +77,7 @@
     Сайт не загружает author.js с ошибкой net::ERR_NAME_NOT_RESOLVED
 
 - summary: |
-    Отсутствует мобильная адаптация
-  environment: |
-    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
-    Firefox 112.0.1 (64-битная)
-    Win10 22H2 19045.3086
-  steps-to-reproduce: |
-    - 
-  expected-result: |
-    Сайт нормально отображается на мобильных устройствах
-  actual-result: |
-    Отсутствует мобильная адаптация
-
-- summary: |
-    Отсутствует мобильная адаптация
+    Отсутствует мобильная адаптация (mobile.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Dimensions: iPhone SE, iPhone XR, Samsung Galaxy S8+
@@ -103,7 +90,7 @@
     Отсутствует мобильная адаптация
 
 - summary: |
-    При загрузке страницы в "Issues" появляется ошибка: Incorrect use of <label for=FORM_ELEMENT>
+    При загрузке страницы в "Issues" появляется ошибка: Incorrect use of <label for=FORM_ELEMENT> (incorrect use.png)
   environment: |
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Win10 22H2 19045.3086
