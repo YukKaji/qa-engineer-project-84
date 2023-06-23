@@ -1,0 +1,115 @@
+---
+- summary: |
+    Не появляется сообщение о введенных отрацательных значениях в фильтр поиска по цене
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - Вводим значение -10 в поле "From"
+    - Вводим значение -5000 в поле "To"
+  expected-result: |
+    Пользователь получает сообщение об ошибке
+  actual-result: |
+    Ошибка не выводится, результатов поиска нет
+
+- summary: |
+    Во вкладке "Language"/"Язык" не отображается изображение флага связаного с языком
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - нажимаем на вкладку "Language"/"Язык"
+  expected-result: |
+    Отображаются изображения флагов всех языков
+  actual-result: |
+    Отображается только флаг для русского языка
+
+- summary: |
+    При оформлении заказа, данные о заказе не отправляются на сервер
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - Добавляем любой товар в корзину
+    - Переходим в корзину
+    - Нажимаем "Оформить заказ"
+  expected-result: |
+    Данные о заказе отправляются на сервер
+  actual-result: |
+    В DevTools во вкладке Network появляется ошибка со статусом 500
+
+- summary: |
+    Отсутствуют "Cookies" для оптимизации работы сайта
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - 
+  expected-result: |
+    Сайт использует "Cookies"
+  actual-result: |
+    Сайт не использует "Cookies"
+
+- summary: |
+    Не загружается random.css
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Firefox 112.0.1 (64-битная)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - 
+  expected-result: |
+    Сайт загружает random.css
+  actual-result: |
+    Сайт не загружает random.css с ошибкой net::ERR_NAME_NOT_RESOLVED
+
+- summary: |
+    Не загружается author.js
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Firefox 112.0.1 (64-битная)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - 
+  expected-result: |
+    Сайт загружает author.js
+  actual-result: |
+    Сайт не загружает author.js с ошибкой net::ERR_NAME_NOT_RESOLVED
+
+- summary: |
+    Отсутствует мобильная адаптация
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Firefox 112.0.1 (64-битная)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - 
+  expected-result: |
+    Сайт нормально отображается на мобильных устройствах
+  actual-result: |
+    Отсутствует мобильная адаптация
+
+- summary: |
+    Отсутствует мобильная адаптация
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Dimensions: iPhone SE, iPhone XR, Samsung Galaxy S8+
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - 
+  expected-result: |
+    Сайт нормально отображается на мобильных устройствах
+  actual-result: |
+    Отсутствует мобильная адаптация
+
+- summary: |
+    При загрузке страницы в "Issues" появляется ошибка: Incorrect use of <label for=FORM_ELEMENT>
+  environment: |
+    Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
+    Win10 22H2 19045.3086
+  steps-to-reproduce: |
+    - 
+  expected-result: |
+    -
+  actual-result: |
+    -
