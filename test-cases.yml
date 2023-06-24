@@ -103,6 +103,6 @@
   test-data: |
     -
   steps:
-    -
+    - 
   expected-result: |
     Отображается мобильная версия сайта
