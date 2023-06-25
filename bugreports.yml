@@ -34,7 +34,10 @@
     Firefox 112.0.1 (64-битная)
     Win10 22H2 19045.3086
   steps-to-reproduce: |
-    - 
+    - Открыть сайт
+    - Открыть DevTools
+    - Открыть Application
+    - Открыть Cookies
   expected-result: |
     Сайт использует "Cookies"
   actual-result: |
@@ -47,7 +50,10 @@
     Firefox 112.0.1 (64-битная)
     Win10 22H2 19045.3086
   steps-to-reproduce: |
-    - 
+    - Открыть сайт
+    - Открыть DevTools
+    - Открыть Network
+    - Обновить сайт
   expected-result: |
     Сайт загружает random.css
   actual-result: |
@@ -60,7 +66,10 @@
     Firefox 112.0.1 (64-битная)
     Win10 22H2 19045.3086
   steps-to-reproduce: |
-    - 
+    - Открыть сайт
+    - Открыть DevTools
+    - Открыть Network
+    - Обновить сайт
   expected-result: |
     Сайт загружает author.js
   actual-result: |
@@ -74,6 +83,8 @@
     Win10 22H2 19045.3086
   steps-to-reproduce: |
     - Открыть сайт в мобильной версии через DevTools
+    - Открыть DevTools
+    - Нажать Toggle device
   expected-result: |
     Сайт нормально отображается на мобильных устройствах
   actual-result: |
@@ -85,7 +96,9 @@
     Google Chrome 114.0.5735.134 (Официальная сборка), (64 бит)
     Win10 22H2 19045.3086
   steps-to-reproduce: |
-    - 
+    - Открыть сайт
+    - Открыть DevTools
+    - Открыть вкладку "Issues"
   expected-result: |
     -
   actual-result: |
